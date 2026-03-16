@@ -3,6 +3,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { PhoneIcon } from "@heroicons/react/24/outline";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import backImage from './back.jpg';
 
 export default function App() {
   const [active, setActive] = React.useState("home");
@@ -144,7 +145,8 @@ export default function App() {
 
       <section
         id="home"
-        className="flex h-fit flex-col items-center justify-center bg-[url('./back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-20 text-center sm:py-32"
+        style={{ backgroundImage: `url(${backImage})` }}
+        className="flex h-fit flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-2 py-20 text-center sm:py-32"
       >
         <p className="text-sm text-white sm:text-lg">Hi there,</p>
         <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl md:text-7xl lg:text-8xl">
@@ -781,7 +783,7 @@ export default function App() {
           </form>
         </div>
       </section>
-      <footer className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-[url('./back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-5 text-center">
+      <footer style={{ backgroundImage: `url(${backImage})` }} className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-cover bg-center bg-no-repeat px-2 py-5 text-center">
         <p className="font-bold text-white">
           Copyright&copy; {new Date().getFullYear()}.{" "}
           <span className="text-lg text-[#2bb3e7]">Dominic Mungai</span>{" "}
