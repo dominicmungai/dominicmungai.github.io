@@ -3,7 +3,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { PhoneIcon } from "@heroicons/react/24/outline";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import backImage from './back.jpg';
+import backImage from './assets/back.jpg';
 
 export default function App() {
   const [active, setActive] = React.useState("home");
