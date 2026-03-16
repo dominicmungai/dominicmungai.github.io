@@ -144,7 +144,7 @@ export default function App() {
 
       <section
         id="home"
-        className="flex h-fit flex-col items-center justify-center bg-[url('./public/back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-20 text-center sm:py-32"
+        className="flex h-fit flex-col items-center justify-center bg-[url('/back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-20 text-center sm:py-32"
       >
         <p className="text-sm text-white sm:text-lg">Hi there,</p>
         <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl md:text-7xl lg:text-8xl">
@@ -184,7 +184,7 @@ export default function App() {
           <div className="flex flex-col gap-3 md:flex-row md:items-stretch">
             <div className="mt-1 w-full overflow-hidden rounded-lg border border-[#2bb3e7] md:w-1/2">
               <img
-                src="./public/Dominic.jpg"
+                src="/Dominic.jpg"
                 alt="Profile"
                 className="h-full w-full rounded-lg object-cover"
               />
@@ -673,7 +673,7 @@ export default function App() {
               </p>
               <p className="font-semibold text-white/70">ISTQB</p>
               <img
-                src="./public/istqb.png"
+                src="/istqb.png"
                 alt="ISTQB Logo"
                 className="mt-2 size-full"
               />
@@ -684,7 +684,7 @@ export default function App() {
               </p>
               <p className="font-semibold text-white/70">QATestLab</p>
               <img
-                src="./public/qatestlab.png"
+                src="/qatestlab.png"
                 alt="QATestLab Logo"
                 className="mt-2 size-full"
               />
@@ -781,7 +781,7 @@ export default function App() {
           </form>
         </div>
       </section>
-      <footer className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-[url('./public/back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-5 text-center">
+      <footer className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-[url('/back.jpg')] bg-cover bg-center bg-no-repeat px-2 py-5 text-center">
         <p className="font-bold text-white">
           Copyright&copy; {new Date().getFullYear()}.{" "}
           <span className="text-lg text-[#2bb3e7]">Dominic Mungai</span>{" "}
