@@ -178,7 +178,7 @@ export default function App() {
           <h2 className="text-5xl font-bold text-white sm:text-5xl">
             About Me
           </h2>
-          <p className="text-white/70">
+          <p className="text-white/50">
             Do you need to deploy a website, software, or app where the clients
             won't complain about quality? If, yes, I am the person you need!
           </p>
@@ -259,7 +259,7 @@ export default function App() {
                 Jan 2025 - Present
               </p>
             </div>
-            <p className="mt-1 text-start text-white/70">
+            <p className="mt-1 text-start text-white/50">
               The Wound Pros LLC, Remote
             </p>
             <div className="mt-3">
@@ -375,7 +375,7 @@ export default function App() {
                 Jan 2024 - Jan 2025
               </p>
             </div>
-            <p className="mt-1 text-start text-white/70">Testlio.com, Remote</p>
+            <p className="mt-1 text-start text-white/50">Testlio.com, Remote</p>
             <div className="mt-3">
               <ul className="space-y-1 text-justify text-white">
                 <li className="flex gap-2">
@@ -454,7 +454,7 @@ export default function App() {
                 Aug 2023 - Jan 2025
               </p>
             </div>
-            <p className="mt-1 text-start text-white/70">
+            <p className="mt-1 text-start text-white/50">
               Craft Silicon Ltd, Kenya
             </p>
             <div className="mt-3">
@@ -560,7 +560,7 @@ export default function App() {
                 Apr 2021 - Aug 2023
               </p>
             </div>
-            <p className="mt-1 text-start text-white/70">
+            <p className="mt-1 text-start text-white/50">
               Techno Brain Ltd, Kenya
             </p>
             <div className="mt-3">
@@ -669,26 +669,26 @@ export default function App() {
             Certifications
           </h2>
           <div className="mt-5 grid w-full gap-4">
-            <div className="flex w-full flex-col rounded-md border border-[#2bb3e7]/60 p-3">
+            <div className="flex w-full gap-2 flex-col rounded-md border border-[#2bb3e7]/60 p-3">
               <p className="text-xl font-bold text-[#2bb3e7]">
                 Certified Tester - Foundation Level
               </p>
-              <p className="font-semibold text-white/70">ISTQB</p>
+              <p className="font-semibold text-white/60">ISTQB</p>
               <img
                 src="./istqb.png"
                 alt="ISTQB Logo"
-                className="mt-2 size-full"
+                className="mt-2 rounded-lg w-full object-contain"
               />
             </div>
-            <div className="flex w-full flex-col rounded-md border border-[#2bb3e7]/60 p-3">
+            <div className="flex w-full gap-2 flex-col rounded-md border border-[#2bb3e7]/60 p-3">
               <p className="text-xl font-bold text-[#2bb3e7]">
                 Fundamentals of Software Testing
               </p>
-              <p className="font-semibold text-white/70">QATestLab</p>
+              <p className="font-semibold text-white/60">QATestLab</p>
               <img
                 src="./qatestlab.png"
                 alt="QATestLab Logo"
-                className="mt-2 size-full"
+                className="mt-2 rounded-lg w-full object-contain"
               />
             </div>
           </div>
@@ -699,7 +699,7 @@ export default function App() {
           <h2 className="text-5xl font-bold text-white sm:text-5xl">
             Let's work together
           </h2>
-          <p className="text-white/70">
+          <p className="text-white/50">
             Interested in working together on a project? Reach out to me or
             leave a message and I'll get back to you as soon as possible
           </p>
@@ -707,12 +707,12 @@ export default function App() {
             <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
               <EnvelopeIcon className="h-10 w-10 text-[#2bb3e7]" />
               <p className="text-2xl font-bold text-white">Email</p>
-              <p className="text-white/70">dmungai65@gmail.com</p>
+              <p className="text-white/50">dmungai65@gmail.com</p>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
               <PhoneIcon className="h-10 w-10 text-[#2bb3e7]" />
               <p className="text-2xl font-bold text-white">Phone</p>
-              <p className="text-white/70">+254718230988</p>
+              <p className="text-white/50">+254718230988</p>
             </div>
 
             <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
@@ -720,7 +720,7 @@ export default function App() {
               <p className="text-2xl font-bold text-white">LinkedIn</p>
               <a
                 href="http://www.linkedin.com/in/dominicmungai"
-                className="text-white/70"
+                className="text-white/50"
                 target="_blank"
               >
                 dominicmungai
@@ -792,7 +792,7 @@ export default function App() {
           Copyright&copy; {new Date().getFullYear()}.{" "}
           <span className="text-lg text-[#2bb3e7]">Dominic Mungai</span>{" "}
         </p>
-        <p className="text-white/80">All rights reserved.</p>
+        <p className="text-white/60">All rights reserved.</p>
       </footer>
     </div>
   );
