@@ -3,7 +3,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { PhoneIcon } from "@heroicons/react/24/outline";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import backImage from './assets/back.jpg';
+import backImage from "./assets/back.jpg";
 
 export default function App() {
   const [active, setActive] = React.useState("home");
@@ -183,7 +183,7 @@ export default function App() {
             won't complain about quality? If, yes, I am the person you need!
           </p>
 
-          <div className="flex flex-col gap-3 md:flex-row md:items-stretch">
+          <div className="flex flex-col gap-3 md:flex-row">
             <div className="mt-1 w-full overflow-hidden rounded-lg border border-[#2bb3e7] md:w-1/2">
               <img
                 src="./Dominic.jpg"
@@ -210,7 +210,7 @@ export default function App() {
               <h1 className="my-2 text-lg font-bold text-[#00b7ff]">
                 MY CORE SKILLS
               </h1>
-              <div className="mt-auto grid gap-x-3 gap-y-2 text-sm text-nowrap sm:flex sm:flex-wrap sm:gap-y-5 lg:grid lg:grid-cols-3">
+              <div className="mt-auto grid grid-cols-2 gap-x-3 gap-y-2 text-sm text-nowrap sm:gap-y-5 lg:grid-cols-3">
                 <div className="flex items-center justify-center rounded-lg border border-[#2bb3e7]/50 bg-linear-to-b from-white/30 to-[#010c23]/70 px-4 py-3 text-center text-white sm:grow">
                   Manual testing
                 </div>
@@ -235,7 +235,7 @@ export default function App() {
                 <div className="flex items-center justify-center rounded-lg border border-[#2bb3e7]/50 bg-linear-to-b from-white/30 to-[#010c23]/70 px-4 py-3 text-center text-white sm:grow">
                   Good analysis
                 </div>
-                <div className="flex items-center justify-center rounded-lg border border-[#2bb3e7]/50 bg-linear-to-b from-white/30 to-[#010c23]/70 px-4 py-3 text-center text-white sm:grow">
+                <div className="col-span-2 flex items-center justify-center rounded-lg border border-[#2bb3e7]/50 bg-linear-to-b from-white/30 to-[#010c23]/70 px-4 py-3 text-center text-white sm:grow lg:col-auto">
                   Highly effective
                 </div>
               </div>
@@ -668,7 +668,7 @@ export default function App() {
           <h2 className="text-5xl font-bold text-white sm:text-5xl">
             Certifications
           </h2>
-          <div className="mt-5 flex w-full flex-col gap-4">
+          <div className="mt-5 grid w-full gap-4">
             <div className="flex w-full flex-col rounded-md border border-[#2bb3e7]/60 p-3">
               <p className="text-xl font-bold text-[#2bb3e7]">
                 Certified Tester - Foundation Level
@@ -703,19 +703,19 @@ export default function App() {
             Interested in working together on a project? Reach out to me or
             leave a message and I'll get back to you as soon as possible
           </p>
-          <div className="flex w-full flex-col items-center sm:flex-row sm:justify-between">
-            <div className="flex h-fit w-full flex-col items-center gap-2 p-4 sm:gap-5">
+          <div className="grid w-full gap-4 sm:grid-cols-3">
+            <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
               <EnvelopeIcon className="h-10 w-10 text-[#2bb3e7]" />
               <p className="text-2xl font-bold text-white">Email</p>
               <p className="text-white/70">dmungai65@gmail.com</p>
             </div>
-            <div className="flex h-fit w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
+            <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
               <PhoneIcon className="h-10 w-10 text-[#2bb3e7]" />
               <p className="text-2xl font-bold text-white">Phone</p>
               <p className="text-white/70">+254718230988</p>
             </div>
 
-            <div className="flex h-fit w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
+            <div className="flex w-full flex-col items-center justify-center gap-2 p-4 sm:gap-5">
               <FaLinkedin className="h-10 w-10 text-[#2bb3e7]" />
               <p className="text-2xl font-bold text-white">LinkedIn</p>
               <a
@@ -754,6 +754,7 @@ export default function App() {
                 required
                 pattern="\+[0-9]{12}"
                 maxLength={13}
+                minLength={13}
                 title="Phone number must start with + followed by exactly 12 digits (13 characters total)"
                 className="w-full rounded-lg border border-[#2bb3e7] bg-white px-3 py-2 focus:ring-1 focus:ring-[#2bb3e7] focus:outline-none"
               />
@@ -783,7 +784,10 @@ export default function App() {
           </form>
         </div>
       </section>
-      <footer style={{ backgroundImage: `url(${backImage})` }} className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-cover bg-center bg-no-repeat px-2 py-5 text-center">
+      <footer
+        style={{ backgroundImage: `url(${backImage})` }}
+        className="flex h-fit flex-col items-center justify-center gap-3 border-t border-[#2bb3e7]/50 bg-cover bg-center bg-no-repeat px-2 py-5 text-center"
+      >
         <p className="font-bold text-white">
           Copyright&copy; {new Date().getFullYear()}.{" "}
           <span className="text-lg text-[#2bb3e7]">Dominic Mungai</span>{" "}
